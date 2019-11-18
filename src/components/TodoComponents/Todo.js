@@ -1,14 +1,13 @@
-import React, { Component } from "react";
+import React from "react";
 import "./Todo.css";
 
-export class ToDo extends Component {
-  constructor() {
-    super();
-    this.state = {
-      someValue: ""
-    };
-  }
-  render() {
-    return <h1>To-Do List</h1>;
-  }
-}
+export const ToDo = props => {
+  return (
+    <div
+      className={`item${props.todo.completed ? "completed" : ""}`}
+      onClick={() => props.handleToggleComplete(props.todo.id)}
+    >
+      {props.todo.task}
+    </div>
+  );
+};
