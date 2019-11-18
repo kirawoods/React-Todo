@@ -8,7 +8,8 @@ export const ToDoForm = props => {
         onChange={props.handleToDoChange}
         type="text"
         name="todo"
-        placeholder="Add a New Task"
+        value={props.todo}
+        placeholder={props.todo}
       />
       <button onClick={props.handleAddToDo}>Add Item</button>
       <button onClick={props.handleClearToDos}>Clear Completed Items</button>
