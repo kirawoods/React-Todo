@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { ToDoForm } from "./components/TodoComponents/TodoForm";
 import { ToDoList } from "./components/TodoComponents/TodoList";
 import "./components/TodoComponents/Todo.css";
+import "./App.css";
 
 class App extends Component {
   constructor() {
@@ -58,7 +59,7 @@ class App extends Component {
   // this component is going to take care of state, and any change handlers you need to work with your state
   render() {
     return (
-      <div>
+      <div className="app-container">
         <ToDoList
           handleToggleComplete={this.toggleCompleted}
           todos={this.state.todos}

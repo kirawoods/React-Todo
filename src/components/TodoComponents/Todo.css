@@ -1,3 +1,42 @@
+@font-face {
+  font-family: "CrayonCrumble";
+  src: url("../../crayon-crumble/crayon-crumble.ttf");
+  src: url("../../crayon-crumble/crayon-crumble.ttf") format("woff2");
+}
+
+.list-header {
+  font-family: "CrayonCrumble";
+  font-size: 36px;
+}
+.list {
+  font-family: "CrayonCrumble";
+  font-size: 20px;
+  padding: 0px 0px 20px 0px;
+}
+
+.item-input {
+  width: 300px;
+  margin: 10px;
+  border-radius: 3px;
+  color: white;
+  background-color: #373737;
+  border: white 2px solid;
+  font-family: "CrayonCrumble";
+  font-size: 20px;
+  padding: 5px;
+}
+
+.button {
+  background: none;
+  color: white;
+  border: 2px white solid;
+  border-radius: 2px;
+  padding: 5px;
+  font-family: "CrayonCrumble";
+  font-size: 16px;
+  margin: 10px;
+}
+
 .completed {
   text-decoration: line-through;
 }
